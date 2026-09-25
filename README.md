@@ -81,23 +81,23 @@ Import `sql/Hospital_System.sql` in MySQL Workbench to restore the database stru
 
 ### Doctor Table
 
-![Doctor Table](screenshots/doctor-table.jpg)
+![Doctor Table](doctor-table.jpg)
 
 ### Doctor Schedule
 
-![Doctor Schedule](screenshots/doctor-schedule.jpg)
+![Doctor Schedule](doctor-schedule.jpg)
 
 ### Appointments
 
-![Appointments](screenshots/appointments.jpg)
+![Appointments](appointments.jpg)
 
 ### Patient Table
 
-![Patient Table](screenshots/patient-table.jpg)
+![Patient Table](patient-table.jpg)
 
 ### Prescriptions
 
-![Prescriptions](screenshots/prescriptions.jpg)
+![Prescriptions](prescriptions.jpg)
 
 ## Skills Demonstrated
 
