@@ -4,7 +4,7 @@ A MySQL database project for managing core hospital information, including patie
 
 ## Project Overview
 
-This project demonstrates relational database design and SQL implementation using MySQL. The database models the relationships between hospital entities and applies primary keys, foreign keys, and referential constraints.
+This project demonstrates relational database design and implementation using MySQL and MySQL Workbench. It includes a conceptual ER diagram, a relational model, SQL scripts for creating and populating the database, a full database dump, sample queries, and screenshots showing the implemented tables.
 
 ## Main Entities
 
@@ -17,14 +17,15 @@ This project demonstrates relational database design and SQL implementation usin
 
 ## Features
 
-- Relational database design with an ER diagram
-- MySQL schema creation
+- Conceptual ER diagram
+- MySQL Workbench relational model
+- SQL schema creation
 - Primary and foreign key constraints
-- One-to-many relationships between core entities
-- Doctor schedule management
-- Patient appointment records
+- Sample data population
+- Appointment and doctor schedule management
 - Prescription records
-- Cascading update/delete rules where defined in the original design
+- Full MySQL database dump
+- Screenshots of implemented tables and results
 
 ## Technologies
 
@@ -39,22 +40,34 @@ Hospital-Database-Management-System/
 ├── README.md
 ├── sql/
 │   ├── schema.sql
-│   └── sample_queries.sql
-└── diagrams/
-    ├── er-diagram.jpg
-    └── mysql-workbench-diagram.jpg
+│   ├── populate.sql
+│   ├── sample_queries.sql
+│   └── Hospital_System.sql
+├── diagrams/
+│   ├── er-diagram.jpg
+│   └── mysql-workbench-diagram.jpg
+└── screenshots/
+    ├── doctor-table.jpg
+    ├── doctor-schedule.jpg
+    ├── appointments.jpg
+    ├── patient-table.jpg
+    └── prescriptions.jpg
 ```
 
-## Database Setup
+## Setup
+
+### Option 1: Build from the SQL scripts
 
 1. Open MySQL Workbench.
-2. Open `sql/schema.sql`.
-3. Run the script to create the `hospital_system` database and its tables.
-4. Use `sql/sample_queries.sql` to explore the database structure.
+2. Run `sql/schema.sql` to create the database and tables.
+3. Run `sql/populate.sql` to insert the sample data.
+4. Run `sql/sample_queries.sql` to explore the database.
+
+### Option 2: Import the full dump
+
+Import `sql/Hospital_System.sql` in MySQL Workbench to restore the database structure and sample data.
 
 ## Database Design
-
-The project includes both a conceptual ER diagram and a MySQL Workbench relational diagram.
 
 ### Conceptual ER Diagram
 
@@ -64,13 +77,36 @@ The project includes both a conceptual ER diagram and a MySQL Workbench relation
 
 ![MySQL Workbench Diagram](diagrams/mysql-workbench-diagram.jpg)
 
+## Implementation Screenshots
+
+### Doctor Table
+
+![Doctor Table](screenshots/doctor-table.jpg)
+
+### Doctor Schedule
+
+![Doctor Schedule](screenshots/doctor-schedule.jpg)
+
+### Appointments
+
+![Appointments](screenshots/appointments.jpg)
+
+### Patient Table
+
+![Patient Table](screenshots/patient-table.jpg)
+
+### Prescriptions
+
+![Prescriptions](screenshots/prescriptions.jpg)
+
 ## Skills Demonstrated
 
-- Database modeling
-- Relational schema design
-- SQL DDL
+- Relational database modeling
+- SQL DDL and DML
 - Primary and foreign keys
 - Referential integrity
+- Data population
+- Database export and import
 - MySQL Workbench
 
 ## Author
